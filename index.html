@@ -8,39 +8,39 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 20px; /* Adicionando preenchimento para afastar do topo */
       background-color: #f4f4f4;
+      height: calc(100vh - 40px); /* Ajustando a altura da página */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
       text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      border: 2px solid #333; /* Adicionando borda */
+      padding: 20px; /* Adicionando preenchimento interno */
+      border-radius: 10px; /* Adicionando bordas arredondadas */
     }
 
-    .content {
-      text-align: center;
+    .title, .status, .humidity {
+      font-size: 24px; /* Tamanho padrão de fonte */
+      border: 1px solid #ccc; /* Adicionando borda */
+      padding: 10px; /* Adicionando preenchimento */
+      margin: 10px 0; /* Adicionando margem superior e inferior */
+      border-radius: 5px; /* Adicionando bordas arredondadas */
     }
 
-    .status {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .humidity {
-      font-size: 18px;
+    .title {
+      font-size: 36px; /* Aumentando o tamanho da fonte para o título */
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Monitor de Irrigação</h1>
-    <div class="content">
-      <div class="status" id="status"></div>
-      <div class="humidity" id="humidity"></div>
-    </div>
+    <h1 class="title">Monitor de Irrigação</h1>
+    <div class="status" id="status">Ligado</div>
+    <div class="humidity" id="humidity">Nível de umidade: xx</div>
   </div>
   <script src="script.js"></script>
 </body>
