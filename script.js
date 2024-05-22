@@ -1,4 +1,4 @@
-const API_URL = 'https://api.thingspeak.com/channels/YOUR_CHANNEL_ID/feeds.json?api_key=YOUR_READ_API_KEY&results=1';
+const API_URL = 'https://api.thingspeak.com/channels/2557138/feeds.json?api_key=5PX9D4F0V8BIL2KXY&results=1';
 
 function fetchData() {
   fetch(API_URL)
